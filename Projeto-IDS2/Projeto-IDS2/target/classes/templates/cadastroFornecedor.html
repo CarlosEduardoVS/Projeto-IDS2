@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <script th:src="@{/js/main.js}"></script>
+    <title>Cadastro </title>
+</head>
+<body>
+
+    <header class="container header-content">
+
+        <div id="logo">
+            <h1>MICHANIKI</h1>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+
+                <li><a th:href="@{/cadastroCliente}">New Cliente</a></li>
+
+                <li><a th:href="@{/listarClientes}">Clientes</a></li>
+
+                <li><a th:href="@{/cadastroObra}">Nova Obra</a></li>
+
+                <li><a th:href="@{/listarObras}">Obras</a></li>
+
+                <li><a th:href="@{/cadastroFornecedor}">Cadastro Fornecedor</a></li>
+
+                <li><a th:href="@{/listarFornecedores}">Fornecedores</a></li>
+                
+                <li><button id="modoEscuroBtn" onclick="modoEscuro()">
+                <img id="iconeModo" src="/img/noite.jpg" alt="icone-modo-escuro">
+                </button></li>
+            </ul>
+        </nav>
+            
+    </header>
+    <div class="form-container">
+        <form th:action="@{${linkFornecedor}}" method="post" th:object="${dadosfornecedor}">
+
+            <p>
+                <strong>Fornecedor: </strong>
+            </p>
+                <input type="text" th:field="*{nomeFornecedor}"><br>
+
+            <p>
+                <strong>Contato: </strong>
+            </p>
+                <input type="text" th:field="*{contato}"><br>
+            
+            <p>
+                <strong>Tipo: </strong>
+            </p>
+                <input type="text" th:field="*{tipo}"><br>
+            
+            <p>
+                <strong>endereco: </strong>
+            </p>
+                <input type="text" th:field="*{endereco}"><br>
+            
+            <button class="btn" type="submit">Salvar</button>
+        </form>
+    </div>
+    
+</body>
+</html>
