@@ -1,10 +1,10 @@
-package com.aulabd.bd;
+package com.JV2.sistema;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BdApplicationTests {
+class SistemaApplicationTests {
 
 	@Test
 	void contextLoads() {
