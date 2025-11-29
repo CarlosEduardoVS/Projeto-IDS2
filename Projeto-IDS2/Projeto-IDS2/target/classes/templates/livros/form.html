@@ -1,0 +1,42 @@
+<!-- templates/livros/form.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Livro</title>
+</head>
+<body>
+
+<h1>Cadastro de Livro</h1>
+
+<form th:action="@{/livros}" th:object="${livro}" method="post">
+
+    <input type="hidden" th:field="*{id}"/>
+
+    Nome do Livro:
+    <input type="text" th:field="*{nomeLivro}"/><br><br>
+
+    Categoria:
+    <input type="text" th:field="*{categoria}"/><br><br>
+
+    Usuário (quem postou):
+    <select th:field="*{usuario}">
+        <option value="">Selecione...</option>
+
+        <!-- lista de usuários do controller -->
+        <option th:each="usu : ${usuarios}"
+                th:value="${usu.id}"
+                th:text="${usu.nome}">
+        </option>
+    </select>
+    <br><br>
+
+    <button type="submit">Salvar</button>
+
+</form>
+
+<br>
+<a th:href="@{/livros}">Voltar</a>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!-- templates/usuarios/form.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+
+<h1>Cadastro de Usuário</h1>
+
+<!-- th:object indica o objeto enviado pelo controller -->
+<form th:action="@{/usuarios}" th:object="${usuario}" method="post">
+
+    <!-- hidden para ID quando estiver editando -->
+    <input type="hidden" th:field="*{id}"/>
+
+    Nome: <input type="text" th:field="*{nome}"/><br><br>
+
+    Email: <input type="email" th:field="*{email}"/><br><br>
+
+    CEP: <input type="text" th:field="*{cep}"/><br><br>
+
+    Endereço: <input type="text" th:field="*{endereco}"/><br><br>
+
+    Complemento: <input type="text" th:field="*{complemento}"/><br><br>
+
+    Senha: <input type="password" th:field="*{senha}"/><br><br>
+
+    Role: <input type="text" th:field="*{role}"/><br><br>
+
+    Ativo:
+    <input type="checkbox" th:field="*{ativo}"/><br><br>
+
+    <button type="submit">Salvar</button>
+
+</form>
+
+<br>
+<a th:href="@{/usuarios}">Voltar</a>
+
+</body>
+</html>

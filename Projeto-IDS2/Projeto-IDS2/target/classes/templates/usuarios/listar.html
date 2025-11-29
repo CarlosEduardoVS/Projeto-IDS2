@@ -1,0 +1,53 @@
+<!-- templates/usuarios/listar.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuários</title>
+</head>
+<body>
+
+<h1>Usuários Cadastrados</h1>
+
+<!-- Botão para ir ao formulário de novo usuário -->
+<a th:href="@{/usuarios/novo}">Novo Usuário</a>
+
+<br><br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ativo</th>
+            <th>Role</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- percorre a lista "usuarios" enviada pelo controller -->
+        <tr th:each="u : ${usuarios}">
+            <td th:text="${u.id}"></td>
+            <td th:text="${u.nome}"></td>
+            <td th:text="${u.email}"></td>
+            <td th:text="${u.ativo}"></td>
+            <td th:text="${u.role}"></td>
+
+            <td>
+                <!-- link para editar -->
+                <a th:href="@{'/usuarios/editar/' + ${u.id}}">Editar</a>
+
+                <!-- link para deletar -->
+                <a th:href="@{'/usuarios/deletar/' + ${u.id}}"
+                   onclick="return confirm('Deseja excluir este usuário?')">
+                   Excluir
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

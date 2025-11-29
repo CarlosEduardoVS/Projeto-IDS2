@@ -1,7 +1,10 @@
-C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\controller\AdminController.java
-C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\controller\AuthController.java
-C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\entity\User.java
-C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\repository\UserRepository.java
-C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\security\SecurityConfig.java
-C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\service\UserService.java
+C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\config\SecurityConfig.java
+C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\Controller\LivroController.java
+C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\Controller\UserController.java
+C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\model\Livro.java
+C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\model\User.java
+C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\Repository\LivroRepository.java
+C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\Repository\UserRepository.java
+C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\Service\LivroService.java
+C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\Service\UserService.java
 C:\Users\Amimir\Desktop\sistema\src\main\java\com\JV2\sistema\SistemaApplication.java
