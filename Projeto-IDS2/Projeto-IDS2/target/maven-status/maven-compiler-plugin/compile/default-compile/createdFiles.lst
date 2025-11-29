@@ -1,0 +1,9 @@
+com\JV2\sistema\service\UserService.class
+com\JV2\sistema\controller\AdminController.class
+com\JV2\sistema\entity\User$UserBuilder.class
+com\JV2\sistema\security\SecurityConfig.class
+com\JV2\sistema\entity\User.class
+com\JV2\sistema\repository\UserRepository.class
+com\JV2\sistema\SistemaApplication.class
+com\JV2\sistema\controller\AuthController.class
+com\JV2\sistema\entity\User$Role.class
