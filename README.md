@@ -1,2 +1,1 @@
-Carlos Sa e Lucas Amigo
-
+Carlos Sa
