@@ -1,0 +1,13 @@
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\Application.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\config\SecurityConfig.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\Controller\FilmesController.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\Controller\MainController.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\Controller\PerfilController.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\Controller\UsuariosController.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\model\FilmesFavoritos.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\model\Role.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\model\Usuarios.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\repository\FilmesFavoritosRepository.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\repository\UsuariosRepository.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\Service\FilmesFavoritosService.java
+C:\Users\Amimir\Desktop\Projeto-IDS2\src\main\java\com\ids2\Service\UsuariosService.java

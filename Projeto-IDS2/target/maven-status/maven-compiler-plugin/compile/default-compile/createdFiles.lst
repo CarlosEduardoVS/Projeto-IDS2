@@ -1,0 +1,13 @@
+com\IDS2\Application.class
+com\IDS2\controller\FilmesController.class
+com\IDS2\controller\PerfilController.class
+com\IDS2\config\SecurityConfig.class
+com\IDS2\service\FilmesFavoritosService.class
+com\IDS2\model\Role.class
+com\IDS2\repository\FilmesFavoritosRepository.class
+com\IDS2\controller\UsuariosController.class
+com\IDS2\controller\MainController.class
+com\IDS2\model\FilmesFavoritos.class
+com\IDS2\model\Usuarios.class
+com\IDS2\service\UsuariosService.class
+com\IDS2\repository\UsuariosRepository.class

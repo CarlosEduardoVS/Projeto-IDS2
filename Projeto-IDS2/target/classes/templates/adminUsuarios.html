@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Usuários</title>
+</head>
+<body>
+
+<h2>Lista de Usuários</h2>
+
+<a href="/usuarios/form">Criar Novo Usuário</a>
+<br><br>
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Role</th>
+        <th>Ações</th>
+    </tr>
+
+    <tr th:each="u : ${usuarios}">
+        <td th:text="${u.id}"></td>
+        <td th:text="${u.email}"></td>
+        <td th:text="${u.nome}"></td>
+        <td th:text="${u.idade}"></td>
+        <td th:text="${u.role}"></td>
+
+        <td>
+            <a th:href="@{'/usuarios/form'(id=${u.id})}">Editar</a> |
+            <a th:href="@{'/usuarios/deletar/' + ${u.id}}">Deletar</a>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
