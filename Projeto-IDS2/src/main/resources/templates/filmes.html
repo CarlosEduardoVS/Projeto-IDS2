@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes</title>
+</head>
+<body>
+
+<h2>Filmes</h2>
+
+<div th:each="f : ${filmes}">
+    <h3 th:text="${f}"></h3>
+
+    <form action="/filmes/favoritar" method="post">
+        <input type="hidden" name="nome" th:value="${f}">
+        <input type="hidden" name="descricao" value="Descrição teste">
+        <input type="hidden" name="nota" value="10">
+        <input type="hidden" name="comentario" value="Filme top!">
+
+        <button type="submit">Favoritar</button>
+    </form>
+
+    <hr>
+</div>
+
+</body>
+</html>
